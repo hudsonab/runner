@@ -1,0 +1,63 @@
+<DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>Race Time Prediction</title>
+    <link rel="stylesheet" href="runformat.css">
+    <script src="runscript.js"></script>
+</head>
+<body>
+	<form method"post">
+    <table>
+    	<tr>
+        	<td colspan="5"><h1>Predicting Race Times</h1></td>
+        </tr>
+        <tr>
+        	<td colspan="5"><h4>Type in a race time in a corresponding text box and your expected time for other distances will be calculated with the Riegal and Cameron formulas</h4></td>
+        </tr>
+    	<tr>
+        	<th>Distance</th>
+            <th>Time in Seconds (Riegel Formula)</th>
+            <th>Time in Minutes</th>
+            <th>Time in Seconds (Cameron Formula)</th>
+            <th>Time in Minutes</th>
+        </tr>
+    	<tr>
+        	<td>Mile</td>
+        	<td><input type="text" name="mile" id="mile" size="20" maxlength="250" onchange="main(this,this.form,'mile')"></td>
+            <td><p id="miMin0"></p></td>
+            <td><p id="camSec0"></p></td>
+            <td><p id="camMin0"></p></td>
+        </tr>
+        <tr>
+        	<td>5k</td>
+        	<td><input type="text" name="fivek" id="5k" size="20" maxlength="250" onchange="main(this,this.form,'fivek')"></td>
+            <td><p id="miMin1"></p></td>
+            <td><p id="camSec1"></p></td>
+            <td><p id="camMin1"></p></td>
+        </tr>
+        <tr>
+        	<td>10k</td>
+        	<td><input type="text" name="tenk" id="10k" size="20" maxlength="250" onchange="main(this,this.form,'tenk')"></td>
+            <td><p id="miMin2"></p></td>
+            <td><p id="camSec2"></p></td>
+            <td><p id="camMin2"></p></td>
+        </tr>
+        <tr>
+        	<td>Half-marathon</td>
+        	<td><input type="text" name="half" id="half" size="20" maxlength="250" onchange="main(this,this.form,'half')"></td>
+            <td><p id="miMin3"></p></td>
+            <td><p id="camSec3"></p></td>
+            <td><p id="camMin3"></p></td>
+        </tr>
+        <tr>
+        	<td>Marathon</td>
+        	<td><input type="text" name="marathon" id="marathon" size="20" maxlength="250" onchange=		"main(this,this.form,'marathon')"></td>
+            <td><p id="miMin4"></p></td>
+            <td><p id="camSec4"></p></td>
+            <td><p id="camMin4"></p></td>
+        </tr>
+    </table>  
+    </form>
+</body>
+</html>
